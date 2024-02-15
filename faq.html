@@ -1,0 +1,36 @@
+---
+title: RTDX FAQ - Your Questions, Answered
+<!-- description: >-
+  We've built an amazing, fantastic team of developers, marketers, designers and
+  sales people. -->
+faq:
+  - question: What is RTDX??
+    answer: RTDX is a real-time data exchange and integration solution designed for operational and analytical data needs.
+  - question: Can RTDX handle continuous data flow?
+    answer: Yes, RTDX enables continuous data flow across operational and analytical planes, supporting streaming data products and authoritative golden sources of data.
+  - question: How does RTDX ensure data security and compliance?
+    answer: RTDX prioritizes data security and compliance, implementing encryption protocols and adhering to industry regulations such as GDPR and HIPAA.
+  - question: Can RTDX integrate with existing data infrastructure?
+    answer: Yes, RTDX is designed to seamlessly integrate with existing data infrastructure, ensuring compatibility and smooth transition.
+  - question: Does RTDX offer customization options for specific business needs?
+    answer: Yes, RTDX offers customization options for businesses with specific data integration requirements. Our team works closely with clients to tailor solutions to their needs.
+  - question: Is there a limit on the volume of data that RTDX can handle?
+    answer: RTDX is designed to handle large volumes of data, with scalability built into its architecture to accommodate growing data needs.
+  - question: How does RTDX handle data quality and integrity?
+    answer: RTDX employs data quality checks and validation processes to ensure the accuracy and integrity of data as it moves through the platform.
+  - question: Can RTDX support real-time analytics and reporting?
+    answer: Yes, RTDX supports real-time analytics and reporting, providing insights into data trends and patterns as they occur.
+  - question: What support options are available?
+    answer: RTDX offers 24x7 monitoring and support for uninterrupted operations.
+---
+
+{% if page.faq %}
+<div class="faq-grid">
+  {% for item in page.faq %}
+  <div class="faq-item">
+    <h3>{{ item.question }}</h3>
+    <p>{{ item.answer }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
